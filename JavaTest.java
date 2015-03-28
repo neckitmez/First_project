@@ -1,14 +1,10 @@
-import java.util.Scanner;
 public class JavaTest {
-    public static void main (String [] args){
-        int n;
-		int sum = 0; 
-		Scanner sr = new Scanner(System.in);
-		System.out.print("Entering integer: ");
-		n = sr.nextInt();
-		do
-		sum = sum + (n % 10);
-		while((n/=10) != 0);
-		System.out.println("Sum of the numbers: " +sum );
+	public static void main (String [] args){
+		double a = 12.7;
+		double n = a - (int) a;
+		if (n >= 0.5) {
+		a += 1;
+		} else a = (int) a;
+		System.out.println ("Result rounding = "+( (int)a));
 	}
 }
