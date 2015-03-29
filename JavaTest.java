@@ -27,17 +27,16 @@ public class JavaTest {
 	void zadanie1 (){
 		int w;
 		int q;
-		
 		System.out.print("Enter the dividend = ");
 		w = sr.nextInt();
 		System.out.print("Enter divider = ");
 		q = sr.nextInt();
 		System.out.println("Result of the division = "+((double)w/q));
 	}
+
 	void zadanie2 (){
 		int n;
 		int sum = 0;
-		
 		System.out.print("Entering integer: ");
 		n = sr.nextInt();
 		do
@@ -54,4 +53,5 @@ public class JavaTest {
 		} else a = (int) a;
 		System.out.println ("Result rounding = "+( (int)a));
 }
+
 }
