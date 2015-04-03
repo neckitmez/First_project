@@ -10,6 +10,7 @@ public class JavaTest {
 		sr = new Scanner(System.in);
 		a=1;
 		while(a!=0) { 
+
 			System.out.print("Select the task: ");
 			a = sr.nextInt();
 			if (a ==1) {
@@ -25,6 +26,7 @@ public class JavaTest {
 		
 	}
 	void zadanie1 (){
+
 		int n;
 		System.out.print("Enter the number:");
 		n = sr.nextInt();
