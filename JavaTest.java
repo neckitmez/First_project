@@ -34,9 +34,7 @@ public class JavaTest {
 			if (a ==7) {
 				zadanie7 ();
 			}
-			if (a ==8) {
-				zadanie8 ();
-			}
+			
 			
 			
 		}
@@ -128,37 +126,7 @@ public class JavaTest {
         System.out.println(d);
         System.out.println("Oсталось " + n + " ч");
     }
-	void zadanie8 (){
-		boolean a;
-		boolean b;
-		boolean c;
-		System.out.print("Enter the first number = ");
-		a = sr.nextInt();
-		System.out.print("Enter the second number = ");
-		b = sr.nextInt();
-		System.out.print("Enter the third number = ");
-		c = sr.nextInt();
-		if (a<b<c) {
-			System.out.println("Increasing sequence: "+a+", "+b+", "+c);
-			if (a<c<b) {
-				System.out.println("Increasing sequence: "+a+", "+c+", "+b);
-				if (c<b<a) {
-					System.out.println("Increasing sequence: "+c+", "+b+", "+a);
-					if (c<a<b) {
-						System.out.println("Increasing sequence: "+c+", "+a+", "+b);
-						if (b<a<c) {
-							System.out.println("Increasing sequence: "+b+", "+a+", "+c);
-							if (b<c<a) {
-								System.out.println("Increasing sequence: "+b+", "+c+", "+a);
-								
-							
-							}
-						}	
-					}
-			    }
-			}
-		}
-    }
+	
 	
 
 }
