@@ -22,65 +22,143 @@ public class JavaTest {
 			if (a ==3) {
 				zadanie3 ();
 			}
+			if (a ==4) {
+				zadanie4 ();
+			}
+			if (a ==5) {
+				zadanie5 ();
+			}
+			if (a ==6) {
+				zadanie6 ();
+			}
+			if (a ==7) {
+				zadanie7 ();
+			}
+			if (a ==8) {
+				zadanie8 ();
+			}
+			
+			
 		}
 		
 	}
 	void zadanie1 (){
-
 		int n;
-		System.out.print("Enter the number:");
-		n = sr.nextInt();
-		if( n % 2 == 0) {
-			System.out.println(n+ "- is an even number");
-		} else {
-			System.out.println(n+ " - is an odd number!");
-		}
+        n=( (int)(Math.random()*7) - 3 );
+		System.out.println("Number of randomly = "+n);
 	}
 
 	void zadanie2 (){
 		int n;
 		int b;
-		int a=10;
-		System.out.print("Enter the first number: ");
+		int c;
+		System.out.print("Enter the  number = ");
 		n = sr.nextInt();
-		System.out.print("Enter the second number: ");
-		b = sr.nextInt();
-		int f =(n-a);
-		int z =(b-a);
-		if( f < z) {
-			System.out.println(n+ " - closer to "+a);
-		} else   {
-			System.out.println(b+ " - closer to "+a);
-		}
-
+		b=(2*n+1);
+		c=( (int)(Math.random()*b) - n );
+		System.out.println("Number of randomly = "+c);
 	}
 	void zadanie3 (){
-		int a;
-		int b;
-		int z;
-		double x1;
-		double x2;
-		System.out.print("Enter the first number a : ");
-		a = sr.nextInt();
-		System.out.print("Enter the second number b : ");
-		b = sr.nextInt();
-		System.out.print("Enter the third number c : ");
-		z = sr.nextInt();
-	    double D = (b*b) -4*a*z;
-		double x = Math.sqrt(D);
-		if (x>0) {
-			x1 = (-1 * b - x)/(2 * a);
-			x2 = (-1 * b + x)/(2 * a);
-			System.out.println("Obtained two roots: " +x1+" and "+x2);
-		}
-		else if (x == 0) {
-			   x2=x1=(-1*(b/2*a));
-			System.out.println("Obtained two equal roots: " +x1+" = "+x2);
-		}
-		else if (x < 0) {
-			System.out.println("No roots!");
+		int m;
+		int n;
+		double z;
+		System.out.print("Enter the first number = ");
+		m = sr.nextInt();
+		System.out.print("Enter the second number = ");
+		n = sr.nextInt();
+		if (m>=n) {
+			System.out.println("Incorrectly entered numbers!");
+		} else if (n>=m){
+			z = Math.floor( Math.random( ) * (n - m + 1) ) + m;
+			System.out.println("Number of randomly = "+z);
 		}
 	}
+		void zadanie4 (){
+		int a = 5;
+        int b = 155;
+        int c = (int) (Math.random()*a + Math.random()*b);
+        if(c >= 25 && c <= 100){
+			System.out.println("The number " +c+ " is contained in the interval (25,100)");
+        }
+        else{
+            System.out.println("The number "+c+" is not contained in the interval (25,100)");
+        }
+    }
+		void zadanie5 (){
+		int n;
+        n=( (int)(Math.random()*7) - 3 );
+		System.out.println("Number of randomly = "+n);
+	}
+	void zadanie6 (){
+		final int min = 100;
+        final int max = 999;
+        int first;
+        int second;
+        int third;
+        int value_max;
+        int value = (int) (min + Math.random() * (max - min)) ;
+        if(value > min && value < max) {
+            first = (int) Math.floor(value / 100);
+            second = (int) Math.floor((value - first * 100) / 10);
+			third = (int) Math.floor(value - first * 100 - second * 10);
+            System.out.println("Three-digit number = "  + value);
+				if(first > second){
+                if (first>third)
+                    value_max=first;
+                else
+                    value_max=third;
+                }
+                else{
+                if (second>third)
+                    value_max=second;
+                else
+                    value_max=third;
+                }
+				
+				System.out.println("The maximum number of = "  + value_max);
+ 
+                }
+        }
+		void zadanie7 (){
+		final int a = 28800;
+        final int b = 60;
+        final int c = 60;
+        int d = (int) (Math.random()* a);
+        int n = (d / b) / c;
+        System.out.println(d);
+        System.out.println("Oсталось " + n + " ч");
+    }
+	void zadanie8 (){
+		boolean a;
+		boolean b;
+		boolean c;
+		System.out.print("Enter the first number = ");
+		a = sr.nextInt();
+		System.out.print("Enter the second number = ");
+		b = sr.nextInt();
+		System.out.print("Enter the third number = ");
+		c = sr.nextInt();
+		if (a<b<c) {
+			System.out.println("Increasing sequence: "+a+", "+b+", "+c);
+			if (a<c<b) {
+				System.out.println("Increasing sequence: "+a+", "+c+", "+b);
+				if (c<b<a) {
+					System.out.println("Increasing sequence: "+c+", "+b+", "+a);
+					if (c<a<b) {
+						System.out.println("Increasing sequence: "+c+", "+a+", "+b);
+						if (b<a<c) {
+							System.out.println("Increasing sequence: "+b+", "+a+", "+c);
+							if (b<c<a) {
+								System.out.println("Increasing sequence: "+b+", "+c+", "+a);
+								
+							
+							}
+						}	
+					}
+			    }
+			}
+		}
+    }
+	
+
 }
-
-
