@@ -1,9 +1,9 @@
 import java.util.Scanner;
-public class JavaTest {
+public class MainClass {
 	int a;
 	Scanner sr;
 	public static void main (String [] args){
-		JavaTest app = new JavaTest();
+		MainClass app = new MainClass();
 		app.begin();
 	}
 	void begin (){
@@ -79,7 +79,7 @@ void zadanie3 (){
 		}
 	}
 	/*
-	Создайте программу, выводящую на экран первые 20 элементов последовательности 2 4 8 16 32 64 128 ….
+	оздайте программу, выводящую на экран первые 20 элементов последовательности 2 4 8 16 32 64 128 ….
 	*/
 void zadanie4 (){	
    	for (int a=2; a<=1048577; a=a*2) {
@@ -177,4 +177,5 @@ void zadanie7 (){
     System.out.println("Number of dividers: " + count);
     }
 }
+
 
