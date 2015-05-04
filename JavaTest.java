@@ -10,158 +10,134 @@ public class JavaTest {
 		sr = new Scanner(System.in);
 		a=1;
 		while(a!=0) { 
-
 			System.out.print("Select the task: ");
 			a = sr.nextInt();
-			if (a ==1) {
-				zadanie1 ();
-			}
-			if (a ==2) {
-				zadanie2 ();
-			}
-			if (a ==3) {
-				zadanie3 ();
-			}
-			if (a ==4) {
-				zadanie4 ();
-			}
-			if (a ==5) {
-				zadanie5 ();
-			}
-			if (a ==6) {
-				zadanie6 ();
-			}
-			if (a ==7) {
-				zadanie7 ();
-			}
-			if (a ==8) {
-				zadanie8 ();
-			}
-			
-			
-		}
-		
-	}
-	void zadanie1 (){
-		int n;
-        n=( (int)(Math.random()*7) - 3 );
-		System.out.println("Number of randomly = "+n);
-	}
-
-	void zadanie2 (){
-		int n;
-		int b;
-		int c;
-		System.out.print("Enter the  number = ");
-		n = sr.nextInt();
-		b=(2*n+1);
-		c=( (int)(Math.random()*b) - n );
-		System.out.println("Number of randomly = "+c);
-	}
-	void zadanie3 (){
-		int m;
-		int n;
-		double z;
-		System.out.print("Enter the first number = ");
-		m = sr.nextInt();
-		System.out.print("Enter the second number = ");
-		n = sr.nextInt();
-		if (m>=n) {
-			System.out.println("Incorrectly entered numbers!");
-		} else if (n>=m){
-			z = Math.floor( Math.random( ) * (n - m + 1) ) + m;
-			System.out.println("Number of randomly = "+z);
-		}
-	}
-		void zadanie4 (){
-		int a = 5;
-        int b = 155;
-        int c = (int) (Math.random()*a + Math.random()*b);
-        if(c >= 25 && c <= 100){
-			System.out.println("The number " +c+ " is contained in the interval (25,100)");
-        }
-        else{
-            System.out.println("The number "+c+" is not contained in the interval (25,100)");
-        }
-    }
-		void zadanie5 (){
-		int n;
-        n=( (int)(Math.random()*7) - 3 );
-		System.out.println("Number of randomly = "+n);
-	}
-	void zadanie6 (){
-		final int min = 100;
-        final int max = 999;
-        int first;
-        int second;
-        int third;
-        int value_max;
-        int value = (int) (min + Math.random() * (max - min)) ;
-        if(value > min && value < max) {
-            first = (int) Math.floor(value / 100);
-            second = (int) Math.floor((value - first * 100) / 10);
-			third = (int) Math.floor(value - first * 100 - second * 10);
-            System.out.println("Three-digit number = "  + value);
-				if(first > second){
-                if (first>third)
-                    value_max=first;
-                else
-                    value_max=third;
-                }
-                else{
-                if (second>third)
-                    value_max=second;
-                else
-                    value_max=third;
-                }
-				
-				System.out.println("The maximum number of = "  + value_max);
- 
-                }
-        }
-		void zadanie7 (){
-		final int a = 28800;
-        final int b = 60;
-        final int c = 60;
-        int d = (int) (Math.random()* a);
-        int n = (d / b) / c;
-        System.out.println(d);
-        System.out.println("Oсталось " + n + " ч");
-    }
-	void zadanie8 (){
-		boolean a;
-		boolean b;
-		boolean c;
-		System.out.print("Enter the first number = ");
-		a = sr.nextInt();
-		System.out.print("Enter the second number = ");
-		b = sr.nextInt();
-		System.out.print("Enter the third number = ");
-		c = sr.nextInt();
-		if (a<b<c) {
-			System.out.println("Increasing sequence: "+a+", "+b+", "+c);
-			if (a<c<b) {
-				System.out.println("Increasing sequence: "+a+", "+c+", "+b);
-				if (c<b<a) {
-					System.out.println("Increasing sequence: "+c+", "+b+", "+a);
-					if (c<a<b) {
-						System.out.println("Increasing sequence: "+c+", "+a+", "+b);
-						if (b<a<c) {
-							System.out.println("Increasing sequence: "+b+", "+a+", "+c);
-							if (b<c<a) {
-								System.out.println("Increasing sequence: "+b+", "+c+", "+a);
-								
-							
-							}
-						}	
-					}
-			    }
+			if (a ==1) zadanie1 ();{
+			}if (a ==2) zadanie2 ();{
+			}if (a ==3) zadanie3 ();{
+			}if (a ==4) zadanie4 ();{
+			}if (a ==5) zadanie5 ();{
+			}if (a ==6) zadanie6 ();{
+			}if (a ==7) zadanie7 ();{
+			}if (a ==8) zadanie8 ();{
+			}if (a ==9) zadanie9 ();{
+			}if (a ==10) zadanie10();{
+			}if (a ==11) zadanie11();{
 			}
 		}
-    }
-	
-
+	}
+void zadanie10 (){	
+		for (int a1=3,a2=2, i=1; i<=12; a1=2*a1-a2-2, i++) {  
+		System.out.print(a + " ");
+		}
+	}
 }
+void zadanie11 (){	
+		for (int a, a1=0,a2=1, i=1; i<=11; a=a1+a2, i++) {  
+		System.out.print(a + " ");
+		}
+	}
+}
+	
+void zadanie3 (){
+   	int s = 90;
+	while (true) {
+		System.out.print(s + " ");
+		s = s - 5;
+		if(s == -5) {
+			break;
+			}
+		}
+	}
 
-
-			
+void zadanie4 (){	
+   	for (int a=2; a<=1048577; a=a*2) {
+	if(a == 1048577) {
+    break;
+		}
+		System.out.print(a + " ");
+		}
+		System.out.print("Stop!");
+	}
+void zadanie5 (){
+	for (int a=2, i=1; i<=10; a=2*a-1, i++) {
+		System.out.print(a + " ");
+		}
+	}
+void zadanie6 (){	
+   	for (int a=-166; a<=10000; a=a*2+200) {
+	if(a == 10000) {
+    break;
+		}
+		System.out.print(a + " ");
+		}
+		System.out.print("Stop!");
+	}
+void zadanie7 (){	
+	int a;
+   	System.out.print("Select the task: ");
+	a = sr.nextInt();
+	int b=(a/2);
+	int d = b-(int)b;
+	if (b==1) {
+		System.out.println("This number is not easy!");
+		}
+		if (b==2) {
+		System.out.println("This number is not easy!");
+		}
+		if (b==0) {
+		System.out.println("This number is not easy!");
+		}
+		if (d<1) {
+		System.out.println("This number is easy!");
+		}
+		if (d==0) {
+		System.out.println("This number is not easy!");
+		}		
+	}
+	void zadanie8 (){
+		int n;
+        do {
+            Scanner scan = new Scanner(System.in);
+            System.out.print("Enter the factorial of a natural number: ");
+            n = scan.nextInt();
+				if(n < 0) {
+					System.out.println("You entered a negative factorial!");
+				} else {
+				int m = 1;
+                for (int i = 1; i <= n; i++)
+                m *= i;
+                System.out.println(m);
+                if (n == 0 || n == 1)
+                System.out.println(m);
+				}
+				} while (n < 0);{
+				System.out.println("End");
+			}
+    }
+	void zadanie9 (){
+	int n;
+        int count = 0;
+		System.out.print("Enter your natural number: ");
+        n = sr.nextInt();
+        System.out.print("Number " + n + " is divided into: " );
+        for(int i = 1; i <= n; i++){
+			if ((n % i) == 0){
+            count++;
+            System.out.print(i + " ");
+            }
+        }
+    System.out.println("Number of dividers: " + count);
+    }
+void zadanie10 (){	
+		for (int a1=3,a2=2, i=1; i<=12; a1=2*a1-a2-2, i++) {  
+		System.out.print(a + " ");
+		}
+	}
+}
+void zadanie11 (){	
+		for (int a, a1=0,a2=1, i=1; i<=11; a=a1+a2, i++) {  
+		System.out.print(a + " ");
+		}
+	}
+}
