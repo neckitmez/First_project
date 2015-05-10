@@ -20,25 +20,39 @@ public class JavaTest {
 			}if (a ==6) zadanie6 ();{
 			}if (a ==7) zadanie7 ();{
 			}if (a ==8) zadanie8 ();{
-			}if (a ==9) zadanie9 ();{
-			}if (a ==10) zadanie10();{
-			}if (a ==11) zadanie11();{
 			}
 		}
 	}
-void zadanie10 (){	
+void zadanie1 (){	
 		for (int a1=3,a2=2, i=1; i<=12; a1=2*a1-a2-2, i++) {  
 		System.out.print(a + " ");
 		}
 	}
-}
-void zadanie11 (){	
-		for (int a, a1=0,a2=1, i=1; i<=11; a=a1+a2, i++) {  
+
+
+void zadanie10 (){
+	int n;
+		int sum = 0; 
+		System.out.print("Entering integer: ");
+		n = sr.nextInt();
+		do
+		sum = sum + (n % 10);
+		while((n/=10) != 0);
+		System.out.println("Sum of the numbers: " +sum );
+ 	}
+
+void zadanie2 (){
+   	for (int a=1; a<=109; a=a+2) {
+	if(a == 109) {
+    break;
+		}
 		System.out.print(a + " ");
 		}
+		System.out.print("Stop!");
 	}
-}
-	
+	/*
+Создайте программу, выводящую на экран все неотрицательные элементы последовательности 90 85 80 75 70 65 60 ….
+*/
 void zadanie3 (){
    	int s = 90;
 	while (true) {
@@ -49,7 +63,9 @@ void zadanie3 (){
 			}
 		}
 	}
-
+	/*
+	оздайте программу, выводящую на экран первые 20 элементов последовательности 2 4 8 16 32 64 128 ….
+	*/
 void zadanie4 (){	
    	for (int a=2; a<=1048577; a=a*2) {
 	if(a == 1048577) {
@@ -59,11 +75,17 @@ void zadanie4 (){
 		}
 		System.out.print("Stop!");
 	}
+	/*	
+Выведите на экран все члены последовательности 2an-1–1, где a1=2, которые меньше 10000.
+	*/
 void zadanie5 (){
 	for (int a=2, i=1; i<=10; a=2*a-1, i++) {
 		System.out.print(a + " ");
 		}
 	}
+	/*
+	Выведите на экран все двузначные члены последовательности 2an-1+200, где a1= –166.
+	*/
 void zadanie6 (){	
    	for (int a=-166; a<=10000; a=a*2+200) {
 	if(a == 10000) {
@@ -73,6 +95,9 @@ void zadanie6 (){
 		}
 		System.out.print("Stop!");
 	}
+/*
+Создайте программу, вычисляющую факториал натурального числа n, которое пользователь введёт с клавиатуры.
+*/	
 void zadanie7 (){	
 	int a;
    	System.out.print("Select the task: ");
@@ -95,7 +120,10 @@ void zadanie7 (){
 		System.out.println("This number is not easy!");
 		}		
 	}
-	void zadanie8 (){
+	/*
+	Выведите на экран все положительные делители натурального числа, введённого пользователем с клавиатуры.
+	*/
+void zadanie8 (){
 		int n;
         do {
             Scanner scan = new Scanner(System.in);
@@ -110,15 +138,19 @@ void zadanie7 (){
                 System.out.println(m);
                 if (n == 0 || n == 1)
                 System.out.println(m);
-				}
-				} while (n < 0);{
-				System.out.println("End");
+            }
+        } while (n < 0);{
+			System.out.println("End");
 			}
     }
-	void zadanie9 (){
+	/*
+	Проверьте, является ли введённое пользователем с клавиатуры натуральное число — простым. Постарайтесь не выполнять лишних действий (например, после того, как вы нашли хотя бы один нетривиальный делитель уже ясно, что число составное и проверку продолжать не нужно). Также учтите, что наименьший делитель натурального числа n, если он вообще имеется, обязательно располагается в отрезке [2; vn].
+	*/
+void zadanie9 (){
 	int n;
         int count = 0;
 		System.out.print("Enter your natural number: ");
+        Scanner sr = new Scanner(System.in);
         n = sr.nextInt();
         System.out.print("Number " + n + " is divided into: " );
         for(int i = 1; i <= n; i++){
@@ -129,15 +161,8 @@ void zadanie7 (){
         }
     System.out.println("Number of dividers: " + count);
     }
-void zadanie10 (){	
-		for (int a1=3,a2=2, i=1; i<=12; a1=2*a1-a2-2, i++) {  
-		System.out.print(a + " ");
-		}
-	}
 }
-void zadanie11 (){	
-		for (int a, a1=0,a2=1, i=1; i<=11; a=a1+a2, i++) {  
-		System.out.print(a + " ");
-		}
-	}
-}
+
+
+
+
